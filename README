@@ -1,0 +1,10 @@
+#thump is like #map for a single object.
+#thump is like #try, but it takes a block
+#thump is like #tap, but it returns the results of the block
+
+> require 'thump'
+> 1.thump {|x| x + 1}
+ => 2
+> nil.thump {|x| x + 1}
+ => nil
+
